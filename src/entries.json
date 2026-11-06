@@ -974,5 +974,257 @@
   "alt": "A zoom into a figure that holds a smaller figure, and another inside that.",
   "op": "Contain",
   "slug": "contain"
+ },
+ {
+  "list": 11,
+  "text": "Incalculable depth.",
+  "plate": "depth",
+  "still": 0,
+  "alt": "Looking down a shaft that seems to stretch deeper and deeper."
+ },
+ {
+  "list": 11,
+  "text": "Great heights.",
+  "plate": "heights",
+  "still": 0,
+  "alt": "Looking straight up between four towers towards the sky."
+ },
+ {
+  "list": 11,
+  "text": "An extra, invisible floor above the vestibule, from which you can look down.",
+  "plate": "overhead",
+  "still": 0,
+  "alt": "An overhead view of tiny people crossing a tiled floor."
+ },
+ {
+  "list": 11,
+  "text": "Underground cubes.",
+  "plate": "underground",
+  "still": 0,
+  "alt": "The view sinks through layers of earth past buried cubes."
+ },
+ {
+  "list": 11,
+  "text": "A doorway framing an object in the next room.",
+  "plate": "doorway",
+  "still": -1,
+  "alt": "Walking towards a doorway, with an object in the room beyond growing larger.",
+  "op": "Reframe",
+  "slug": "reframe"
+ },
+ {
+  "list": 11,
+  "text": "The angles from which paintings are looked at in a gallery.",
+  "plate": "gallery_angle",
+  "still": 7,
+  "alt": "A painting narrows and widens as you walk past it.",
+  "op": "Locate",
+  "slug": "locate"
+ },
+ {
+  "list": 11,
+  "text": "An endless rolled drawing.",
+  "plate": "scroll",
+  "still": 0,
+  "alt": "A long landscape unrolls between two scrolls."
+ },
+ {
+  "list": 11,
+  "text": "A corridor of candles.",
+  "plate": "candles",
+  "still": 0,
+  "alt": "Walking down a corridor with candles flickering on both sides."
+ },
+ {
+  "list": 11,
+  "text": "Demonstrations with 45-degree mirrors above them.",
+  "plate": "mirror45",
+  "still": 0,
+  "alt": "A turning object seen from the front, and from above in a tilted mirror."
+ },
+ {
+  "list": 11,
+  "text": "Looking through prisms.",
+  "plate": "prisms_view",
+  "still": 5,
+  "alt": "One disc splits into six as a prism turns."
+ },
+ {
+  "list": 11,
+  "text": "A rotating circular mirror.",
+  "plate": "rot_mirror",
+  "still": 0,
+  "alt": "A round mirror turning, its image flipping as it goes round."
+ },
+ {
+  "list": 11,
+  "text": "A small ball you look into to see an image.",
+  "plate": "ball_lens",
+  "still": 0,
+  "alt": "A chequered scene bulging through a round lens."
+ },
+ {
+  "list": 11,
+  "text": "Large paintings with areas of very detailed scenes.",
+  "plate": "painting_zoom",
+  "still": 10,
+  "alt": "A zoom from a whole landscape into a small house and figure."
+ },
+ {
+  "list": 11,
+  "text": "The heatwave from a wood-fired oven.",
+  "plate": "heat",
+  "still": 0,
+  "alt": "The brickwork above an oven shimmers in the heat."
+ },
+ {
+  "list": 11,
+  "text": "A film mirror that warps your reflection when struck.",
+  "plate": "film_mirror",
+  "still": 1,
+  "alt": "A figure in a mirror ripples, then settles."
+ },
+ {
+  "list": 11,
+  "text": "Reflections of bright white letters on a black background.",
+  "plate": "letters",
+  "still": 0,
+  "alt": "The word LIGHT above its wavering reflection."
+ },
+ {
+  "list": 11,
+  "text": "Strobe lights on a chaotic pendulum.",
+  "plate": "pendulum",
+  "still": 12,
+  "alt": "A double pendulum caught as a trail of frozen positions.",
+  "op": "Mark Time",
+  "slug": "mark-time"
+ },
+ {
+  "list": 11,
+  "text": "A 100-year time-lapse (Myanmar).",
+  "plate": "timelapse",
+  "still": 12,
+  "alt": "A building rises and crumbles as the sun races overhead.",
+  "op": "Run It Long",
+  "slug": "run-it-long"
+ },
+ {
+  "list": 11,
+  "text": "Dripped glazes.",
+  "plate": "drips",
+  "still": -1,
+  "alt": "A white glaze runs slowly down the plate.",
+  "op": "Weather",
+  "slug": "weather"
+ },
+ {
+  "list": 11,
+  "text": "The cold from open refrigerators.",
+  "plate": "fridge",
+  "still": 0,
+  "alt": "Cold mist falls from an open fridge and spreads on the floor."
+ },
+ {
+  "list": 11,
+  "text": "A clock that measures something other than time.",
+  "plate": "odd_clock",
+  "still": 2,
+  "alt": "A clock hand moving in an irregular rhythm."
+ },
+ {
+  "list": 11,
+  "text": "A force you can neither see nor feel, but know is there.",
+  "plate": "force",
+  "still": 0,
+  "alt": "Lines of dots flow around something that is not there."
+ },
+ {
+  "list": 11,
+  "text": "An elegant person sitting in the room, watching you, not interacting.",
+  "plate": "watcher",
+  "still": 0,
+  "alt": "A still figure in a suit. Only the eyes move."
+ },
+ {
+  "list": 11,
+  "text": "Toroidal surfaces.",
+  "plate": "torus",
+  "still": 0,
+  "alt": "A wire ring-shaped surface turning."
+ },
+ {
+  "list": 11,
+  "text": "Not knowing where it begins or ends.",
+  "plate": "no_ends",
+  "still": 0,
+  "alt": "A dashed figure of eight running with no start or finish."
+ },
+ {
+  "list": 11,
+  "text": "A rotating dividing wall.",
+  "plate": "rot_wall",
+  "still": 0,
+  "alt": "A plan of a room with a wall turning on a central pivot.",
+  "op": "Partition",
+  "slug": "partition"
+ },
+ {
+  "list": 11,
+  "text": "Neon orange on dark blues and blacks.",
+  "plate": "neon_orange",
+  "still": 0,
+  "alt": "An orange neon ring flickering over dark blue."
+ },
+ {
+  "list": 11,
+  "text": "Fuchsia on dark blues.",
+  "plate": "fuchsia",
+  "still": 0,
+  "alt": "Three fuchsia rings turning on a dark blue ground."
+ },
+ {
+  "list": 11,
+  "text": "Blue-green light.",
+  "plate": "blue_green",
+  "still": 8,
+  "alt": "A cone of blue-green light slowly brightening and dimming."
+ },
+ {
+  "list": 11,
+  "text": "Reds at 3 to 4%, on white.",
+  "plate": "red_faint",
+  "still": 0,
+  "alt": "A very faint pink disc on white.",
+  "op": "Find The Threshold",
+  "slug": "find-the-threshold"
+ },
+ {
+  "list": 11,
+  "text": "Bright yellow over black drawn patterns.",
+  "plate": "yellow_black",
+  "still": 0,
+  "alt": "A turning yellow and black spiral."
+ },
+ {
+  "list": 11,
+  "text": "Iridescent red on maguey green.",
+  "plate": "red_green",
+  "still": 0,
+  "alt": "Shifting bands of red over green."
+ },
+ {
+  "list": 11,
+  "text": "The range of golds, from the vulgar to the mysterious.",
+  "plate": "golds",
+  "still": 0,
+  "alt": "Bars of gold from bright to nearly black, with a glint passing over."
+ },
+ {
+  "list": 11,
+  "text": "Lips painted intense red.",
+  "plate": "lips",
+  "still": 0,
+  "alt": "Bright red lips with a moving highlight."
  }
 ]

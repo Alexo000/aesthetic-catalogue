@@ -38,10 +38,10 @@ def noise3(n,nz,beta,seed):
     r=np.random.default_rng(seed); fx,fy,fz=np.meshgrid(fftfreq(n)*n,fftfreq(n)*n,fftfreq(nz)*nz,indexing='ij')
     k=np.sqrt(fx**2+fy**2+fz**2);k[0,0,0]=1
     z=np.real(ifftn(k**(-beta)*np.exp(2j*np.pi*r.random((n,n,nz))))); return (z-z.mean())/z.std()
-def write(name,frames,dur):
+def write(name,frames,dur,pal=None):
     if not isinstance(frames,list): frames=[frames]
     def im(f):
-        i=Image.fromarray(np.asarray(f,np.uint8),'P'); i.putpalette(PAL+[0]*(768-len(PAL))); return i
+        i=Image.fromarray(np.asarray(f,np.uint8),'P'); p=pal or PAL; i.putpalette(p+[0]*(768-len(p))); return i
     ims=[im(f) for f in frames]
     if len(ims)==1: ims[0].save(f'{OUT}/{name}.png',optimize=True); return
     ims[0].save(f'{OUT}/{name}.gif',save_all=True,append_images=ims[1:],duration=dur,loop=0,disposal=1,optimize=False)

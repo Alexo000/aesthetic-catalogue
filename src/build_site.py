@@ -4,7 +4,7 @@ from PIL import Image
 
 URL = 'https://catalogue.ramos-saavedra.com/'
 TITLE = 'Aesthetic Catalogue · Alejandro Ramos Saavedra'
-DESC = 'Things I noted as I travelled, over the years: 118 observations, each with a small picture.'
+DESC = 'Things I noted as I travelled, over the years: 152 observations, each with a small picture.'
 e = lambda s: html.escape(s, quote=True)
 txt = lambda s: html.escape(s, quote=False)
 entries = json.load(open('src/entries.json', encoding='utf-8'))
@@ -13,7 +13,7 @@ def still(name, frame):
     """A still of each GIF, served to people who ask their device for reduced motion."""
     im = Image.open(f'site/plates/{name}.gif')
     im.seek(min(frame, im.n_frames - 1) if frame >= 0 else im.n_frames + frame)
-    im.convert('P', colors=4).save(f'site/plates/{name}-still.png', optimize=True)
+    im.convert('RGB').convert('P', palette=Image.ADAPTIVE, colors=8).save(f'site/plates/{name}-still.png', optimize=True)
 
 def plate(x):
     n, alt = x['plate'], e(x['alt'])
