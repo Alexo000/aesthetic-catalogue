@@ -4,7 +4,7 @@ from PIL import Image
 
 URL = 'https://catalogue.ramos-saavedra.com/'
 TITLE = 'Aesthetic Catalogue · Alejandro Ramos Saavedra'
-DESC = 'Things I noted as I travelled, over the years: 98 observations, each with a small picture.'
+DESC = 'Things I noted as I travelled, over the years: 118 observations, each with a small picture.'
 e = lambda s: html.escape(s, quote=True)
 txt = lambda s: html.escape(s, quote=False)
 entries = json.load(open('src/entries.json', encoding='utf-8'))

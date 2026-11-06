@@ -812,5 +812,167 @@
   "alt": "Wood grain on the left, smooth shaded metal on the right.",
   "op": "Juxtapose",
   "slug": "juxtapose"
+ },
+ {
+  "list": 10,
+  "text": "A hole of light in dark substance.",
+  "plate": "hole_light",
+  "still": 0,
+  "alt": "A bright disc in the dark, slowly opening and closing.",
+  "op": "Cut Through",
+  "slug": "cut-through"
+ },
+ {
+  "list": 10,
+  "text": "A very small red object in the middle of dark substance.",
+  "plate": "red_dot",
+  "still": 0,
+  "alt": "One tiny red square in the middle of black."
+ },
+ {
+  "list": 10,
+  "text": "A cloud moving very slowly, almost still, in a confined space.",
+  "plate": "slow_cloud",
+  "still": 0,
+  "alt": "A small dotted cloud drifting inside a square outline.",
+  "op": "Contain",
+  "slug": "contain"
+ },
+ {
+  "list": 10,
+  "text": "A deep tunnel with no visible end.",
+  "plate": "tunnel",
+  "still": 0,
+  "alt": "Square frames rushing past as you move forward down a tunnel."
+ },
+ {
+  "list": 10,
+  "text": "A spiral space you can only walk sideways, ending in a drop at the centre.",
+  "plate": "spiral_space",
+  "still": 20,
+  "alt": "A small square travels along a spiral in plan and vanishes at the centre."
+ },
+ {
+  "list": 10,
+  "text": "Holes you can look through.",
+  "plate": "peephole",
+  "still": 0,
+  "alt": "Three holes in a white wall. The dots behind them shift as you move.",
+  "op": "Reframe",
+  "slug": "reframe"
+ },
+ {
+  "list": 10,
+  "text": "Secret compartments inside secret compartments.",
+  "plate": "compartments",
+  "still": 4,
+  "alt": "Sliding lids reveal a box inside a box inside a box.",
+  "op": "Contain",
+  "slug": "contain"
+ },
+ {
+  "list": 10,
+  "text": "Round cabinets that turn on their axis.",
+  "plate": "cabinets",
+  "still": 0,
+  "alt": "A round cabinet with shelves turning on its axis."
+ },
+ {
+  "list": 10,
+  "text": "A stone with smoke coming out of it.",
+  "plate": "smoke_stone",
+  "still": 0,
+  "alt": "Threads of smoke rise from a speckled stone."
+ },
+ {
+  "list": 10,
+  "text": "A row of lights switching on and off, giving movement to something that does not exist.",
+  "plate": "phi",
+  "still": 0,
+  "alt": "Lights chase around a rectangle, so something seems to travel along it."
+ },
+ {
+  "list": 10,
+  "text": "Double symmetry.",
+  "plate": "double_sym",
+  "still": 0,
+  "alt": "A shifting shape mirrored both left to right and top to bottom.",
+  "op": "Mirror",
+  "slug": "mirror"
+ },
+ {
+  "list": 10,
+  "text": "Repetition of an almost identical object.",
+  "plate": "almost",
+  "still": 0,
+  "alt": "A grid of identical marks, with one reversed in a different place each time.",
+  "op": "Let Drift",
+  "slug": "let-drift"
+ },
+ {
+  "list": 10,
+  "text": "A very thin material that moves as if it were alive.",
+  "plate": "thin",
+  "still": 0,
+  "alt": "A thin line rippling through the air."
+ },
+ {
+  "list": 10,
+  "text": "Greenish glass discs stacked vertically.",
+  "plate": "discs",
+  "still": 0,
+  "alt": "A vertical stack of round discs with light passing up them."
+ },
+ {
+  "list": 10,
+  "text": "Axonometric and isometric perspectives.",
+  "plate": "axon",
+  "still": 0,
+  "alt": "A cluster of blocks changing from an isometric view to an axonometric one and back.",
+  "op": "Reframe",
+  "slug": "reframe"
+ },
+ {
+  "list": 10,
+  "text": "8-bit and pixelation.",
+  "plate": "pixelate",
+  "still": 4,
+  "alt": "A shaded sphere going from large blocks to fine dots and back.",
+  "op": "Degrade",
+  "slug": "degrade"
+ },
+ {
+  "list": 10,
+  "text": "The whitish texture inside a hole drilled through transparent material.",
+  "plate": "drilled",
+  "still": 0,
+  "alt": "A clear block with a speckled white shaft drilled through it.",
+  "op": "Cut Through",
+  "slug": "cut-through"
+ },
+ {
+  "list": 10,
+  "text": "The space a censored piece would have occupied.",
+  "plate": "censored",
+  "still": 0,
+  "alt": "A pan along a gallery wall, where one picture is only a dotted outline.",
+  "op": "Mark What Went",
+  "slug": "mark-what-went"
+ },
+ {
+  "list": 10,
+  "text": "An object in which you cannot see your reflection.",
+  "plate": "no_reflect",
+  "still": 0,
+  "alt": "A figure walks past two panes. It shows in the first and not in the second."
+ },
+ {
+  "list": 10,
+  "text": "Statues placed inside statues.",
+  "plate": "statue_droste",
+  "still": 0,
+  "alt": "A zoom into a figure that holds a smaller figure, and another inside that.",
+  "op": "Contain",
+  "slug": "contain"
  }
 ]
