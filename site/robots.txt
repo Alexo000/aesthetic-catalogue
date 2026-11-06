@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://catalogue.ramos-saavedra.com/sitemap.xml

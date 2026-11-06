@@ -1,0 +1,515 @@
+[
+ {
+  "list": 1,
+  "text": "Blue so dark it's almost black.",
+  "plate": "blue",
+  "still": 0,
+  "alt": "A flat square of very dark blue.",
+  "op": "Find The Threshold",
+  "slug": "find-the-threshold"
+ },
+ {
+  "list": 1,
+  "text": "Neon gas."
+ },
+ {
+  "list": 1,
+  "text": "Red light."
+ },
+ {
+  "list": 1,
+  "text": "Directed warm light."
+ },
+ {
+  "list": 1,
+  "text": "Strobe light."
+ },
+ {
+  "list": 1,
+  "text": "Darkness so dark it seems like an object or a volume (dark substance).",
+  "plate": "dark_substance",
+  "still": 0,
+  "alt": "White dust falls and stops at the edge of a block that cannot be seen.",
+  "op": "Find The Threshold",
+  "slug": "find-the-threshold"
+ },
+ {
+  "list": 1,
+  "text": "Light so bright it seems like an object or a volume (light substance)."
+ },
+ {
+  "list": 1,
+  "text": "Light piercing dark substance.",
+  "plate": "light_pierce",
+  "still": 0,
+  "alt": "A thin line of sparkling white pixels crosses the dark and fades.",
+  "op": "Cut Through",
+  "slug": "cut-through"
+ },
+ {
+  "list": 1,
+  "text": "Red lasers piercing dark substances.",
+  "plate": "red_lasers",
+  "still": 0,
+  "alt": "Two red lines cross, visible only where dust passes through them.",
+  "op": "Cut Through",
+  "slug": "cut-through"
+ },
+ {
+  "list": 1,
+  "text": "Beam of light that creates and destroys space in the blink of an eye.",
+  "plate": "beam",
+  "still": 3,
+  "alt": "A beam sweeps once across a dark room, showing parts of it, then all goes dark.",
+  "op": "Partition",
+  "slug": "partition"
+ },
+ {
+  "list": 2,
+  "text": "Iridescence."
+ },
+ {
+  "list": 2,
+  "text": "A beam of light through sprayed water."
+ },
+ {
+  "list": 2,
+  "text": "Proper lighting for a very bright object."
+ },
+ {
+  "list": 2,
+  "text": "The uniform and persistent glow of dust in the darkness."
+ },
+ {
+  "list": 2,
+  "text": "The uniform and persistent glow of gold in the darkness."
+ },
+ {
+  "list": 2,
+  "text": "Lamps with different colour temperature illuminating an object."
+ },
+ {
+  "list": 2,
+  "text": "Lighting dark objects with candles."
+ },
+ {
+  "list": 2,
+  "text": "Opposing mirrors.",
+  "plate": "mirrors",
+  "still": 0,
+  "alt": "Squares nested inside squares, with a moving light repeated in each.",
+  "op": "Iterate",
+  "slug": "iterate"
+ },
+ {
+  "list": 2,
+  "text": "Angled opposing mirrors.",
+  "plate": "angled",
+  "still": 0,
+  "alt": "A moving line reflected six times around a centre.",
+  "op": "Iterate",
+  "slug": "iterate"
+ },
+ {
+  "list": 2,
+  "text": "A mirror underneath or behind an object, revealing something that would be invisible."
+ },
+ {
+  "list": 2,
+  "text": "A mirror that lets you see how you look within the space you are in."
+ },
+ {
+  "list": 3,
+  "text": "Irregular reflective surfaces."
+ },
+ {
+  "list": 3,
+  "text": "Concave and convex prisms covered with reflective surfaces."
+ },
+ {
+  "list": 3,
+  "text": "The reflection of a reflection."
+ },
+ {
+  "list": 3,
+  "text": "Spherical reflective surfaces."
+ },
+ {
+  "list": 3,
+  "text": "Transparent and irregular surfaces that distort what is seen through them.",
+  "plate": "glass",
+  "still": 0,
+  "alt": "Straight vertical lines bend as lumps of glass pass in front of them.",
+  "op": "Translate",
+  "slug": "translate"
+ },
+ {
+  "list": 3,
+  "text": "Angled (bevelled) transparent surfaces that distort what is seen through them."
+ },
+ {
+  "list": 3,
+  "text": "A set of superimposed prisms that geometrically distort what is seen through them."
+ },
+ {
+  "list": 3,
+  "text": "Polished tree fossils with sand."
+ },
+ {
+  "list": 3,
+  "text": "Black concrete."
+ },
+ {
+  "list": 3,
+  "text": "Dark wood."
+ },
+ {
+  "list": 3,
+  "text": "Dark wood painted white where it was cut."
+ },
+ {
+  "list": 4,
+  "text": "Different resolution of textures carved into the same stone.",
+  "plate": "stone",
+  "still": 0,
+  "alt": "Bands of carved pyramids, each half the size of the band above, under a turning light.",
+  "op": "Isolate",
+  "slug": "isolate"
+ },
+ {
+  "list": 4,
+  "text": "Marble with inlays."
+ },
+ {
+  "list": 4,
+  "text": "Marquetry of semi-precious stones."
+ },
+ {
+  "list": 4,
+  "text": "Semi-precious stones embedded in wood."
+ },
+ {
+  "list": 4,
+  "text": "Rough marble or granite on rough wood."
+ },
+ {
+  "list": 4,
+  "text": "Objects made of variations of the same material."
+ },
+ {
+  "list": 4,
+  "text": "The milky finishes of minerals."
+ },
+ {
+  "list": 4,
+  "text": "The texture of faience."
+ },
+ {
+  "list": 4,
+  "text": "The iridescence of Roman glass."
+ },
+ {
+  "list": 4,
+  "text": "Rough wood grain."
+ },
+ {
+  "list": 5,
+  "text": "A rough piece of melted glass"
+ },
+ {
+  "list": 5,
+  "text": "Paint on glass, overlaid."
+ },
+ {
+  "list": 5,
+  "text": "Space defined by smell."
+ },
+ {
+  "list": 5,
+  "text": "Space defined by light."
+ },
+ {
+  "list": 5,
+  "text": "Space defined by sound.",
+  "plate": "sound",
+  "still": 18,
+  "alt": "The plan of a room, with dust gathering along lines that shift between two patterns.",
+  "op": "Partition",
+  "slug": "partition"
+ },
+ {
+  "list": 5,
+  "text": "Space defined by temperature and humidity."
+ },
+ {
+  "list": 5,
+  "text": "A structure that duplicates when supported by a mirror."
+ },
+ {
+  "list": 5,
+  "text": "Central vestibular spaces of great height."
+ },
+ {
+  "list": 5,
+  "text": "The \"V\" from an architectural perspective.",
+  "plate": "vee",
+  "still": 0,
+  "alt": "Lines converge on one point, which moves as the viewer moves.",
+  "op": "Locate",
+  "slug": "locate"
+ },
+ {
+  "list": 5,
+  "text": "A space made of the same material, illuminated with different colour temperatures."
+ },
+ {
+  "list": 6,
+  "text": "Natural continuation of a body, interrupted."
+ },
+ {
+  "list": 6,
+  "text": "Mono-instrument music with unusually long silences.",
+  "plate": "silence",
+  "still": 2,
+  "alt": "A single mark sounds and fades, followed by a long empty pause.",
+  "op": "Work The Gap",
+  "slug": "work-the-gap"
+ },
+ {
+  "list": 6,
+  "text": "Monotonous music."
+ },
+ {
+  "list": 6,
+  "text": "The sound of cicadas."
+ },
+ {
+  "list": 6,
+  "text": "The sound of music contrasted with silence."
+ },
+ {
+  "list": 6,
+  "text": "Reading dense poetry as ambient sound."
+ },
+ {
+  "list": 6,
+  "text": "A complex clockwork mechanism that moves something that has no function."
+ },
+ {
+  "list": 6,
+  "text": "Comic shading technique.",
+  "plate": "comic",
+  "still": 0,
+  "alt": "A sphere shaded with print dots, with the light moving round it."
+ },
+ {
+  "list": 6,
+  "text": "Oil paintings of contrasting tones not well mixed."
+ },
+ {
+  "list": 6,
+  "text": "White pencil on a slightly different white-toned sheet."
+ },
+ {
+  "list": 6,
+  "text": "Rectangular boxes with stripes of different colours arranged in a regular grid."
+ },
+ {
+  "list": 7,
+  "text": "Fabrics laid underwater waving intensely."
+ },
+ {
+  "list": 7,
+  "text": "Fabrics waving intensely.",
+  "plate": "fabric",
+  "still": 0,
+  "alt": "Vertical folds of black and white ripple downwards."
+ },
+ {
+  "list": 7,
+  "text": "The smell of burning resins."
+ },
+ {
+  "list": 7,
+  "text": "Watching others without them knowing you're watching them"
+ },
+ {
+  "list": 7,
+  "text": "A small model of the space you are in",
+  "plate": "model",
+  "still": 0,
+  "alt": "A room containing a model of itself, and a figure walking in both.",
+  "op": "Contain",
+  "slug": "contain"
+ },
+ {
+  "list": 7,
+  "text": "Objects arranged equidistantly.",
+  "plate": "equidistant",
+  "still": 0,
+  "alt": "Seven rows of seven small squares, evenly spaced.",
+  "op": "Set A Ratio",
+  "slug": "set-a-ratio"
+ },
+ {
+  "list": 7,
+  "text": "A very large and heavy object that does not rest on the object beneath it.",
+  "plate": "heavy",
+  "still": 0,
+  "alt": "A huge white block above a smaller one. The thin gap between them widens slightly.",
+  "op": "Work The Gap",
+  "slug": "work-the-gap"
+ },
+ {
+  "list": 7,
+  "text": "The relationship between the space you’re in and the taste of something eaten there."
+ },
+ {
+  "list": 7,
+  "text": "The projection of shadows."
+ },
+ {
+  "list": 7,
+  "text": "Pale white glow",
+  "plate": "glow",
+  "still": 0,
+  "alt": "A soft dotted glow that slowly swells and shrinks."
+ },
+ {
+  "list": 7,
+  "text": "An interior open space exposed to the weather"
+ },
+ {
+  "list": 7,
+  "text": "Objects hanging from the ceiling with bouncing springs.",
+  "plate": "springs",
+  "still": 0,
+  "alt": "Five small shapes bounce on springs at different speeds."
+ },
+ {
+  "list": 8,
+  "text": "Rotating graphic spirals.",
+  "plate": "spiral",
+  "still": 0,
+  "alt": "A white spiral turning on black."
+ },
+ {
+  "list": 8,
+  "text": "A good seat to sit and contemplate."
+ },
+ {
+  "list": 8,
+  "text": "Juxtaposition of the same object but in different scales."
+ },
+ {
+  "list": 8,
+  "text": "Furniture that encourages social interaction."
+ },
+ {
+  "list": 8,
+  "text": "Subtle changes in repetition.",
+  "plate": "drift",
+  "still": 15,
+  "alt": "Vertical lines appear one at a time, each a copy of the last with one small change.",
+  "op": "Let Drift",
+  "slug": "let-drift"
+ },
+ {
+  "list": 8,
+  "text": "Helical spirals."
+ },
+ {
+  "list": 8,
+  "text": "An object placed on a very high plinth"
+ },
+ {
+  "list": 8,
+  "text": "A mound of earth shaped by drops of water.",
+  "plate": "drops",
+  "still": -1,
+  "alt": "Drops fall on a mound and slowly wear it down.",
+  "op": "Weather",
+  "slug": "weather"
+ },
+ {
+  "list": 8,
+  "text": "Mounds of a single material.",
+  "plate": "mound",
+  "still": -3,
+  "alt": "Grains fall in a thin stream and build a cone.",
+  "op": "Accumulate",
+  "slug": "accumulate"
+ },
+ {
+  "list": 8,
+  "text": "The frozen water of a waterfall."
+ },
+ {
+  "list": 8,
+  "text": "An aluminium extrusion."
+ },
+ {
+  "list": 9,
+  "text": "Solomonic columns.",
+  "plate": "solomon",
+  "still": 0,
+  "alt": "A twisted column turning on its axis."
+ },
+ {
+  "list": 9,
+  "text": "Different effects of time on the same material."
+ },
+ {
+  "list": 9,
+  "text": "Jungle vegetation framed by a window."
+ },
+ {
+  "list": 9,
+  "text": "A sliced stone",
+  "plate": "sliced",
+  "still": 0,
+  "alt": "Rings of a stone change as the cut moves through it.",
+  "op": "Cut Through",
+  "slug": "cut-through"
+ },
+ {
+  "list": 9,
+  "text": "Successively self-contained prisms rotating on the same axis.",
+  "plate": "prisms",
+  "still": 0,
+  "alt": "Three wire cubes, one inside another, turning on one axis.",
+  "op": "Contain",
+  "slug": "contain"
+ },
+ {
+  "list": 9,
+  "text": "Objects that only reveal their beauty if illuminated with a certain type of light."
+ },
+ {
+  "list": 9,
+  "text": "Painted stone"
+ },
+ {
+  "list": 9,
+  "text": "Rocks coated with metal."
+ },
+ {
+  "list": 9,
+  "text": "Gold leaf coating on irregular surfaces."
+ },
+ {
+  "list": 9,
+  "text": "Asymmetrical makeup"
+ },
+ {
+  "list": 9,
+  "text": "Sepulchral silences.",
+  "void": true,
+  "op": "Deprive",
+  "slug": "deprive"
+ },
+ {
+  "list": 9,
+  "text": "The contrast of wood with bronze."
+ }
+]
