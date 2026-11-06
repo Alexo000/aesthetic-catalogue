@@ -13,7 +13,9 @@
   "text": "Neon gas.",
   "plate": "neon_words",
   "still": 0,
-  "alt": "The word GAS in red-orange neon switches off, then SAG in blue neon lights up and droops."
+  "alt": "The word GAS in red-orange neon switches off, then SAG in blue neon lights up and droops.",
+  "op": "Scramble",
+  "slug": "scramble"
  },
  {
   "list": 1,
@@ -425,8 +427,8 @@
   "plate": "vee",
   "still": 0,
   "alt": "Lines converge on one point, which moves as the viewer moves.",
-  "op": "Locate",
-  "slug": "locate"
+  "op": "Anchor",
+  "slug": "anchor"
  },
  {
   "list": 5,
@@ -1130,7 +1132,9 @@
   "text": "A clock that measures something other than time.",
   "plate": "odd_clock",
   "still": 2,
-  "alt": "A clock hand moving in an irregular rhythm."
+  "alt": "A clock hand moving in an irregular rhythm.",
+  "op": "Substitute",
+  "slug": "substitute"
  },
  {
   "list": 11,
@@ -1144,7 +1148,9 @@
   "text": "An elegant person sitting in the room, watching you, not interacting.",
   "plate": "watcher",
   "still": 0,
-  "alt": "A still figure in a suit. Only the eyes move."
+  "alt": "A still figure in a suit. Only the eyes move.",
+  "op": "Occupy",
+  "slug": "occupy"
  },
  {
   "list": 11,
@@ -1218,7 +1224,9 @@
   "text": "The range of golds, from the vulgar to the mysterious.",
   "plate": "golds",
   "still": 0,
-  "alt": "Bars of gold from bright to nearly black, with a glint passing over."
+  "alt": "Bars of gold from bright to nearly black, with a glint passing over.",
+  "op": "Shade Across",
+  "slug": "shade-across"
  },
  {
   "list": 11,
@@ -1226,5 +1234,257 @@
   "plate": "lips",
   "still": 0,
   "alt": "Bright red lips with a moving highlight."
+ },
+ {
+  "list": 0,
+  "text": "Mended ceramics.",
+  "plate": "mended",
+  "still": 18,
+  "alt": "A bowl cracks from the rim, and a bright line fills the crack.",
+  "op": "Build On The Marks",
+  "slug": "build-on-the-marks"
+ },
+ {
+  "list": 0,
+  "text": "Objects that have been subjected to enormous forces.",
+  "plate": "forces",
+  "still": 15,
+  "alt": "A press comes down on a bar, lifts, and the bar stays partly bent.",
+  "op": "Work What Stayed",
+  "slug": "work-what-stayed"
+ },
+ {
+  "list": 0,
+  "text": "A group of objects showing the same thing in different forms, materials and sizes, from different civilisations.",
+  "plate": "same_thing",
+  "still": 0,
+  "alt": "Five versions of one figure in a row, each a different size and texture.",
+  "op": "Hold",
+  "slug": "hold"
+ },
+ {
+  "list": 0,
+  "text": "Every variation of a beak, laid out on a table of skulls.",
+  "plate": "beaks",
+  "still": 16,
+  "alt": "Rows of small skulls fill up, each with a different beak.",
+  "op": "Exhaust",
+  "slug": "exhaust"
+ },
+ {
+  "list": 0,
+  "text": "An object with a timeline of every place it has been.",
+  "plate": "timeline",
+  "still": 29,
+  "alt": "A small square moves from place to place, leaving a dotted route, above a timeline.",
+  "op": "Trace",
+  "slug": "trace"
+ },
+ {
+  "list": 0,
+  "text": "Never seeing the product until it is brought to you.",
+  "plate": "cloche",
+  "still": 9,
+  "alt": "A domed cover lifts from a plate, shows a small object, and lowers again.",
+  "op": "Hide Until Done",
+  "slug": "hide-until-done"
+ },
+ {
+  "list": 0,
+  "text": "The motorbike with interchangeable carriages (Cambodia).",
+  "plate": "motorbike",
+  "still": 6,
+  "alt": "A motorbike stays still while passenger, cargo, food and fuel carriages swap at its hitch.",
+  "op": "Freeze The Joint",
+  "slug": "freeze-the-joint"
+ },
+ {
+  "list": 0,
+  "text": "Wooden interlocking (dougong).",
+  "plate": "dougong",
+  "still": 55,
+  "alt": "Wooden brackets drop into place one by one until they hold up a beam.",
+  "op": "Entangle",
+  "slug": "entangle"
+ },
+ {
+  "list": 0,
+  "text": "Sensing something in total darkness.",
+  "plate": "dark_sense",
+  "still": 5,
+  "alt": "Almost nothing: a faint scatter of points moves through the black.",
+  "op": "Deprive",
+  "slug": "deprive"
+ },
+ {
+  "list": 0,
+  "text": "Objects made of other objects from different periods.",
+  "plate": "spolia",
+  "still": 24,
+  "alt": "A column is built from six parts that do not match.",
+  "op": "Sample",
+  "slug": "sample"
+ },
+ {
+  "list": 0,
+  "text": "Objects sunk in a reef so that life grows on them.",
+  "plate": "reef",
+  "still": 14,
+  "alt": "A vessel on the seabed slowly disappears under growth.",
+  "op": "Seed And Leave",
+  "slug": "seed-and-leave"
+ },
+ {
+  "list": 0,
+  "text": "Wetting a statue dozens of times.",
+  "plate": "wet_statue",
+  "still": 7,
+  "alt": "A long ladle swings up and pours water over a statue, again and again.",
+  "op": "Ritualise",
+  "slug": "ritualise"
+ },
+ {
+  "list": 0,
+  "text": "A space where the only choice is which booth to put your input into.",
+  "plate": "booth",
+  "still": 13,
+  "alt": "A dot crosses an empty room to one of four booths, which lights up.",
+  "op": "Constrain",
+  "slug": "constrain"
+ },
+ {
+  "list": 0,
+  "text": "Long tunnels leading into places.",
+  "plate": "long_tunnel",
+  "still": 5,
+  "alt": "A section through solid ground: a long narrow tunnel opening into one room, with dots passing along it.",
+  "op": "Funnel",
+  "slug": "funnel"
+ },
+ {
+  "list": 0,
+  "text": "The unclear image each person can complete as they prefer.",
+  "plate": "unclear",
+  "still": 6,
+  "alt": "A shifting, symmetrical blur that nearly becomes a face.",
+  "op": "Elicit",
+  "slug": "elicit"
+ },
+ {
+  "list": 0,
+  "text": "A ranking of objects by how many people have seen them.",
+  "plate": "ranking",
+  "still": 11,
+  "alt": "Five bars of equal height grow apart into a descending order.",
+  "op": "Rank",
+  "slug": "rank"
+ },
+ {
+  "list": 0,
+  "text": "A small ball you shake, which produces a tiny sign.",
+  "plate": "omikuji",
+  "still": 21,
+  "alt": "A ball shakes from side to side, then a small slip slides out of it.",
+  "op": "Defer",
+  "slug": "defer"
+ },
+ {
+  "list": 0,
+  "text": "A traditional object beside the same object in an unexpected material.",
+  "plate": "pearl",
+  "still": 3,
+  "alt": "Two spheres side by side, one smooth like a pearl, one veined like marble.",
+  "op": "Mimic",
+  "slug": "mimic"
+ },
+ {
+  "list": 0,
+  "text": "Electrum, an alloy of gold and silver.",
+  "plate": "electrum",
+  "still": 10,
+  "alt": "Two tones either side of a block mix until no line is left between them.",
+  "op": "Merge",
+  "slug": "merge"
+ },
+ {
+  "list": 0,
+  "text": "A building with everything removed except what holds it up.",
+  "plate": "bones",
+  "still": 20,
+  "alt": "The panels of a facade vanish one by one until only the frame stands.",
+  "op": "Strip",
+  "slug": "strip"
+ },
+ {
+  "list": 0,
+  "text": "One form turning into another, one small step at a time.",
+  "plate": "morph",
+  "still": 5,
+  "alt": "A square slowly becomes a circle, a star, a triangle, and a square again.",
+  "op": "Morph",
+  "slug": "morph"
+ },
+ {
+  "list": 0,
+  "text": "A stone arch standing after its timber support has been taken away.",
+  "plate": "arch",
+  "still": 17,
+  "alt": "Stones are laid on a timber frame, the frame drops away, and the arch stands.",
+  "op": "Scaffold",
+  "slug": "scaffold"
+ },
+ {
+  "list": 0,
+  "text": "One dark patch left uncleaned on a restored ceiling.",
+  "plate": "dark_patch",
+  "still": 14,
+  "alt": "A dark ceiling is wiped clean, except for one small rectangle.",
+  "op": "Keep Back",
+  "slug": "keep-back"
+ },
+ {
+  "list": 0,
+  "text": "Water calligraphy drying on the pavement.",
+  "plate": "water_calligraphy",
+  "still": 20,
+  "alt": "Dark brush strokes are written on paving and shrink away as they dry.",
+  "op": "Let Fade",
+  "slug": "let-fade"
+ },
+ {
+  "list": 0,
+  "text": "A sand mandala swept away once it is finished.",
+  "plate": "mandala",
+  "still": 7,
+  "alt": "A circular pattern builds ring by ring, is swept away, and leaves a small heap.",
+  "op": "Sacrifice",
+  "slug": "sacrifice"
+ },
+ {
+  "list": 0,
+  "text": "A camera pointed at its own screen.",
+  "plate": "feedback",
+  "still": 3,
+  "alt": "Frames inside frames twist into a spiral, with a dot circling through them.",
+  "op": "Feed Back",
+  "slug": "feed-back"
+ },
+ {
+  "list": 0,
+  "text": "Ink pressed between two halves of a folded sheet.",
+  "plate": "inkblot",
+  "still": 12,
+  "alt": "A sheet folds over a patch of ink and opens on a symmetrical blot.",
+  "op": "Fold",
+  "slug": "fold"
+ },
+ {
+  "list": 0,
+  "text": "A moving wheel caught by a slit camera, stretched into an oval.",
+  "plate": "slit",
+  "still": 22,
+  "alt": "A vertical line sweeps across and leaves a wheel stretched into an oval.",
+  "op": "Pin",
+  "slug": "pin"
  }
 ]
