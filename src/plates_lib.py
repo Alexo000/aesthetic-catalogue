@@ -3,7 +3,7 @@ from PIL import Image
 from numpy.fft import fftfreq, ifft2, ifftn
 G=64
 OUT='site/plates'
-PAL=[0,0,0, 244,243,238, 255,42,26, 4,6,24]
+PAL=[0,0,0, 244,243,238, 255,42,26, 4,6,24, 226,222,210]
 def blank(n=G): return np.zeros((n,n),np.uint8)
 def put(a,x,y,c=1):
     x=int(round(x));y=int(round(y)); n=a.shape[0]

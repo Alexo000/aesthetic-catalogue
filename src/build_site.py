@@ -4,7 +4,7 @@ from PIL import Image
 
 URL = 'https://catalogue.ramos-saavedra.com/'
 TITLE = 'Aesthetic Catalogue · Alejandro Ramos Saavedra'
-DESC = 'Things I noted as I travelled, over the years: 98 observations, some with a small moving picture.'
+DESC = 'Things I noted as I travelled, over the years: 98 observations, each with a small picture.'
 e = lambda s: html.escape(s, quote=True)
 txt = lambda s: html.escape(s, quote=False)
 entries = json.load(open('src/entries.json', encoding='utf-8'))
@@ -24,19 +24,11 @@ def plate(x):
     return f'<img src="plates/{n}.png" width="64" height="64" alt="{alt}" loading="lazy" decoding="async">'
 
 def item(x):
-    cap = f'<a href="https://operations.ramos-saavedra.com/{x["slug"]}/">{e(x["op"])}</a>' if x.get('op') else ''
-    if 'plate' in x:
-        fig = f'<figure>{plate(x)}<figcaption>{cap}</figcaption></figure>'
-    elif x.get('void'):
-        fig = f'<figure><div class="void" role="img" aria-label="Nothing. An empty space the size of a picture."></div><figcaption>{cap}</figcaption></figure>'
-    else:
-        fig = ''
-    return f'<li><p>{txt(x["text"])}</p>{fig}</li>'
+    op = f'<a href="https://operations.ramos-saavedra.com/{x["slug"]}/">{e(x["op"])}</a>' if x.get('op') else ''
+    pic = plate(x) if 'plate' in x else '<div class="void" role="img" aria-label="Nothing. An empty space the size of a picture."></div>'
+    return f'<li>{pic}<div class="cap"><p>{txt(x["text"])}</p>{op}</div></li>'
 
-lists = {}
-for x in entries:
-    lists.setdefault(x['list'], []).append(item(x))
-body = '\n'.join('<ul>' + ''.join(v) + '</ul>' for v in lists.values())
+body = '<ul>' + '\n'.join(item(x) for x in entries) + '</ul>'
 
 page = f'''<!doctype html>
 <html lang="en-GB">
@@ -64,35 +56,39 @@ page = f'''<!doctype html>
 <script>window.goatcounter={{path:function(p){{return location.host+p}}}}</script>
 <script data-goatcounter="https://alexo000.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <style>
-/* One long black room. The words stay still; a picture is one line of the list given a body. Every picture shares a 64 by 64 grid, scaled by whole numbers. */
+/* A contact sheet. Everything sits on the plates' own pixel: --m is one plate pixel, and a plate is 64 of them. */
 :root {{ color-scheme:dark; --ground:#000; --ink:#f4f3ee; --dim:#8b8a84; --line:#2a2a28;
-  --sans:'IBM Plex Sans',Arial,sans-serif; --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace; --plate:320px; }}
+  --sans:'IBM Plex Sans',Arial,sans-serif; --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace; --cols:2; --plate:168px; --m:2.625px; }}
+@media (min-width:640px) {{ :root {{ --cols:3; --plate:192px; --m:3px; }} }}
+@media (min-width:980px) {{ :root {{ --cols:4; --plate:224px; --m:3.5px; }} }}
 html {{ background:var(--ground); }}
-body {{ margin:0; background:var(--ground); color:var(--ink); font:400 18px/1.36 var(--sans);
+body {{ margin:0; background:var(--ground); color:var(--ink); font:400 15px/1.32 var(--sans);
   padding-block:32px 64px; padding-left:max(16px,env(safe-area-inset-left,0px)); padding-right:max(16px,env(safe-area-inset-right,0px)); }}
-.wrap {{ max-width:640px; margin-inline:auto; display:grid; gap:64px; }}
-header {{ display:grid; gap:10px; }}
-h1 {{ margin:0; font:500 18px/1.3 var(--sans); }}
-header p {{ margin:0; color:var(--dim); max-width:46ch; }}
-ul {{ list-style:none; margin:0; padding:0; display:grid; gap:12px; }}
-li {{ display:grid; min-width:0; }}
-li p {{ margin:0; max-width:52ch; }}
-figure {{ margin:16px 0 28px; display:grid; gap:9px; justify-items:start; }}
-figcaption {{ font:400 13px/1.3 var(--mono); color:var(--dim); min-height:17px; }}
+.wrap {{ width:calc(var(--plate) * var(--cols)); max-width:100%; margin-inline:auto; display:grid; gap:calc(var(--m) * 10); }}
+header {{ display:grid; gap:calc(var(--m) * 2); }}
+h1 {{ margin:0; font:500 clamp(18px,2vw,22px)/1.3 var(--sans); }}
+header p {{ margin:0; color:var(--dim); font-size:clamp(16px,1.8vw,19px); max-width:46ch; }}
+ul {{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(var(--cols),var(--plate)); }}
+li {{ min-width:0; display:flex; flex-direction:column; box-shadow:0 0 0 .5px var(--line); }}
+img,.void {{ display:block; width:var(--plate); height:var(--plate); max-width:100%; image-rendering:pixelated; }}
+.cap {{ padding:calc(var(--m) * 3) calc(var(--m) * 3) calc(var(--m) * 4); display:grid; gap:calc(var(--m) * 2); align-content:start; flex:1; }}
+.cap p {{ margin:0; }}
+.cap a {{ font:400 11.5px/1.3 var(--mono); color:var(--dim); justify-self:start; }}
 a {{ color:inherit; text-underline-offset:3px; text-decoration-color:var(--line); }}
 a:hover {{ color:var(--ink); text-decoration-color:currentColor; }}
-a:focus-visible {{ outline:2px solid var(--ink); outline-offset:3px; }}
-img,.void {{ display:block; width:var(--plate); height:var(--plate); max-width:100%; image-rendering:pixelated; }}
-footer {{ display:grid; gap:6px; border-top:1px solid var(--line); padding-top:20px; color:var(--dim); font:400 14px/1.45 var(--sans); }}
+a:focus-visible {{ outline:2px solid var(--ink); outline-offset:2px; }}
+footer {{ display:grid; gap:6px; color:var(--dim); font:400 14px/1.45 var(--sans); }}
 footer p {{ margin:0; max-width:52ch; }}
-@media (min-width:700px) {{ :root {{ --plate:448px; }} body {{ font-size:21px; padding-block:64px 88px; }} h1 {{ font-size:21px; }} ul {{ gap:14px; }} figure {{ margin:20px 0 36px; }} .wrap {{ gap:88px; }} }}
-@media (max-width:351px) {{ :root {{ --plate:256px; }} }}
 </style>
+<script>
+/* Fit the plates to the screen in whole device pixels, so no plate pixel is ever a different size. */
+(function(){{var r=document.documentElement;function f(){{var c=getComputedStyle(document.body),d=window.devicePixelRatio||1,w=r.clientWidth-parseFloat(c.paddingLeft)-parseFloat(c.paddingRight),n=w<600?2:w<940?3:w<1500?4:5,p=Math.floor(w/n*d/64)*64/d;r.style.setProperty('--cols',n);r.style.setProperty('--plate',p+'px');r.style.setProperty('--m',p/64+'px')}}document.addEventListener('DOMContentLoaded',f);addEventListener('resize',f)}})();
+</script>
 </head>
 <body>
 <div class="wrap">
 <header><h1>Aesthetic Catalogue</h1><p>Things I noted as I travelled, over the years.</p></header>
-<main style="display:grid;gap:inherit">
+<main>
 {body}
 </main>
 <footer>

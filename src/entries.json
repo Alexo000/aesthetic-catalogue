@@ -10,19 +10,31 @@
  },
  {
   "list": 1,
-  "text": "Neon gas."
+  "text": "Neon gas.",
+  "plate": "neon",
+  "still": 0,
+  "alt": "A bent tube of light that buzzes and flickers."
  },
  {
   "list": 1,
-  "text": "Red light."
+  "text": "Red light.",
+  "plate": "red_light",
+  "still": 0,
+  "alt": "A field of red dots, densest at the centre."
  },
  {
   "list": 1,
-  "text": "Directed warm light."
+  "text": "Directed warm light.",
+  "plate": "warm_light",
+  "still": 0,
+  "alt": "A cone of dotted light falling from a lamp onto the floor."
  },
  {
   "list": 1,
-  "text": "Strobe light."
+  "text": "Strobe light.",
+  "plate": "strobe",
+  "still": 0,
+  "alt": "A dancing figure caught in separate poses, with darkness between them."
  },
  {
   "list": 1,
@@ -35,7 +47,12 @@
  },
  {
   "list": 1,
-  "text": "Light so bright it seems like an object or a volume (light substance)."
+  "text": "Light so bright it seems like an object or a volume (light substance).",
+  "plate": "light_substance",
+  "still": 0,
+  "alt": "Black dust falls on white and stops at the edge of a block that cannot be seen.",
+  "op": "Find The Threshold",
+  "slug": "find-the-threshold"
  },
  {
   "list": 1,
@@ -66,31 +83,58 @@
  },
  {
   "list": 2,
-  "text": "Iridescence."
+  "text": "Iridescence.",
+  "plate": "iridescence",
+  "still": 0,
+  "alt": "Two sets of rings overlap and make shifting bands.",
+  "op": "Read The Interference",
+  "slug": "read-the-interference"
  },
  {
   "list": 2,
-  "text": "A beam of light through sprayed water."
+  "text": "A beam of light through sprayed water.",
+  "plate": "spray_beam",
+  "still": 0,
+  "alt": "Falling drops show only inside a diagonal beam."
  },
  {
   "list": 2,
-  "text": "Proper lighting for a very bright object."
+  "text": "Proper lighting for a very bright object.",
+  "plate": "proper_light",
+  "still": 5,
+  "alt": "A pool of light narrows until it fits a bright diamond."
  },
  {
   "list": 2,
-  "text": "The uniform and persistent glow of dust in the darkness."
+  "text": "The uniform and persistent glow of dust in the darkness.",
+  "plate": "dust_glow",
+  "still": 0,
+  "alt": "Even specks of dust that shimmer slightly."
  },
  {
   "list": 2,
-  "text": "The uniform and persistent glow of gold in the darkness."
+  "text": "The uniform and persistent glow of gold in the darkness.",
+  "plate": "gold_glow",
+  "still": 0,
+  "alt": "A small square object with a soft, steady glow around it."
  },
  {
   "list": 2,
-  "text": "Lamps with different colour temperature illuminating an object."
+  "text": "Lamps with different colour temperature illuminating an object.",
+  "plate": "lamps_temp",
+  "still": 2,
+  "alt": "A sphere lit from each side, with dots from one lamp and lines from the other.",
+  "op": "Isolate",
+  "slug": "isolate"
  },
  {
   "list": 2,
-  "text": "Lighting dark objects with candles."
+  "text": "Lighting dark objects with candles.",
+  "plate": "candle",
+  "still": 0,
+  "alt": "A flickering flame lights the lower part of a dark vase.",
+  "op": "Reveal",
+  "slug": "reveal"
  },
  {
   "list": 2,
@@ -112,27 +156,53 @@
  },
  {
   "list": 2,
-  "text": "A mirror underneath or behind an object, revealing something that would be invisible."
+  "text": "A mirror underneath or behind an object, revealing something that would be invisible.",
+  "plate": "mirror_under",
+  "still": 0,
+  "alt": "A box on a shelf, with a mirror below showing the marks on its underside.",
+  "op": "Reveal",
+  "slug": "reveal"
  },
  {
   "list": 2,
-  "text": "A mirror that lets you see how you look within the space you are in."
+  "text": "A mirror that lets you see how you look within the space you are in.",
+  "plate": "mirror_self",
+  "still": 0,
+  "alt": "A figure walks while its reflection moves in a tall mirror.",
+  "op": "Locate",
+  "slug": "locate"
  },
  {
   "list": 3,
-  "text": "Irregular reflective surfaces."
+  "text": "Irregular reflective surfaces.",
+  "plate": "irregular_reflect",
+  "still": 0,
+  "alt": "Horizontal lines wobble as if reflected in uneven metal."
  },
  {
   "list": 3,
-  "text": "Concave and convex prisms covered with reflective surfaces."
+  "text": "Concave and convex prisms covered with reflective surfaces.",
+  "plate": "prisms_reflect",
+  "still": 0,
+  "alt": "Triangular facets catch and lose the light in turn."
  },
  {
   "list": 3,
-  "text": "The reflection of a reflection."
+  "text": "The reflection of a reflection.",
+  "plate": "refl_refl",
+  "still": 0,
+  "alt": "A letter F, then its reflection, then the reflection of that.",
+  "op": "Iterate",
+  "slug": "iterate"
  },
  {
   "list": 3,
-  "text": "Spherical reflective surfaces."
+  "text": "Spherical reflective surfaces.",
+  "plate": "mirror_ball",
+  "still": 0,
+  "alt": "A chequered room curved around a turning sphere.",
+  "op": "Compress",
+  "slug": "compress"
  },
  {
   "list": 3,
@@ -145,27 +215,53 @@
  },
  {
   "list": 3,
-  "text": "Angled (bevelled) transparent surfaces that distort what is seen through them."
+  "text": "Angled (bevelled) transparent surfaces that distort what is seen through them.",
+  "plate": "bevelled",
+  "still": 0,
+  "alt": "A moving grid jumps sideways as it passes under the bevelled edges of a pane.",
+  "op": "Translate",
+  "slug": "translate"
  },
  {
   "list": 3,
-  "text": "A set of superimposed prisms that geometrically distort what is seen through them."
+  "text": "A set of superimposed prisms that geometrically distort what is seen through them.",
+  "plate": "stacked_prisms",
+  "still": 0,
+  "alt": "Vertical lines broken into sliding steps.",
+  "op": "Translate",
+  "slug": "translate"
  },
  {
   "list": 3,
-  "text": "Polished tree fossils with sand."
+  "text": "Polished tree fossils with sand.",
+  "plate": "fossil",
+  "still": 0,
+  "alt": "A cross-section of tree rings, with sand around the edge.",
+  "op": "Cut Through",
+  "slug": "cut-through"
  },
  {
   "list": 3,
-  "text": "Black concrete."
+  "text": "Black concrete.",
+  "plate": "black_concrete",
+  "still": 0,
+  "alt": "Black with faint specks, board lines and four tie holes."
  },
  {
   "list": 3,
-  "text": "Dark wood."
+  "text": "Dark wood.",
+  "plate": "dark_wood",
+  "still": 0,
+  "alt": "Thin grain lines on black."
  },
  {
   "list": 3,
-  "text": "Dark wood painted white where it was cut."
+  "text": "Dark wood painted white where it was cut.",
+  "plate": "dark_cut",
+  "still": 0,
+  "alt": "Dark grain with a solid white cut edge.",
+  "op": "Foreground",
+  "slug": "foreground"
  },
  {
   "list": 4,
@@ -178,55 +274,114 @@
  },
  {
   "list": 4,
-  "text": "Marble with inlays."
+  "text": "Marble with inlays.",
+  "plate": "marble",
+  "still": 0,
+  "alt": "White marble with thin veins and a diamond inlay.",
+  "op": "Graft",
+  "slug": "graft"
  },
  {
   "list": 4,
-  "text": "Marquetry of semi-precious stones."
+  "text": "Marquetry of semi-precious stones.",
+  "plate": "marquetry",
+  "still": 0,
+  "alt": "Irregular fitted pieces, each with its own tone.",
+  "op": "Graft",
+  "slug": "graft"
  },
  {
   "list": 4,
-  "text": "Semi-precious stones embedded in wood."
+  "text": "Semi-precious stones embedded in wood.",
+  "plate": "stones_wood",
+  "still": 0,
+  "alt": "Oval stones set into wood grain.",
+  "op": "Graft",
+  "slug": "graft"
  },
  {
   "list": 4,
-  "text": "Rough marble or granite on rough wood."
+  "text": "Rough marble or granite on rough wood.",
+  "plate": "rough_on_rough",
+  "still": 0,
+  "alt": "A speckled rough block resting on heavy grain.",
+  "op": "Juxtapose",
+  "slug": "juxtapose"
  },
  {
   "list": 4,
-  "text": "Objects made of variations of the same material."
+  "text": "Objects made of variations of the same material.",
+  "plate": "variations",
+  "still": 0,
+  "alt": "Four identical vessels, from sparse to solid.",
+  "op": "Isolate",
+  "slug": "isolate"
  },
  {
   "list": 4,
-  "text": "The milky finishes of minerals."
+  "text": "The milky finishes of minerals.",
+  "plate": "milky",
+  "still": 0,
+  "alt": "A soft, dotted, cloudy lump with a slowly moving light."
  },
  {
   "list": 4,
-  "text": "The texture of faience."
+  "text": "The texture of faience.",
+  "plate": "faience",
+  "still": 0,
+  "alt": "White glaze covered in fine cracks."
  },
  {
   "list": 4,
-  "text": "The iridescence of Roman glass."
+  "text": "The iridescence of Roman glass.",
+  "plate": "roman_glass",
+  "still": 0,
+  "alt": "A shard with patches of tone that shift.",
+  "op": "Weather",
+  "slug": "weather"
  },
  {
   "list": 4,
-  "text": "Rough wood grain."
+  "text": "Rough wood grain.",
+  "plate": "rough_wood",
+  "still": 0,
+  "alt": "Thick, swirling bands of grain."
  },
  {
   "list": 5,
-  "text": "A rough piece of melted glass"
+  "text": "A rough piece of melted glass",
+  "plate": "melted",
+  "still": 0,
+  "alt": "A blob outline with bubbles that slowly sags.",
+  "op": "Weather",
+  "slug": "weather"
  },
  {
   "list": 5,
-  "text": "Paint on glass, overlaid."
+  "text": "Paint on glass, overlaid.",
+  "plate": "paint_glass",
+  "still": 0,
+  "alt": "Three hatched panes slide over one another.",
+  "op": "Lay Over",
+  "slug": "lay-over"
  },
  {
   "list": 5,
-  "text": "Space defined by smell."
+  "text": "Space defined by smell.",
+  "plate": "smell_space",
+  "still": 0,
+  "alt": "A cloud of drifting specks spreads from one corner.",
+  "op": "Partition",
+  "slug": "partition"
  },
  {
   "list": 5,
-  "text": "Space defined by light."
+  "text": "Space defined by light.",
+  "plate": "light_space",
+  "still": 0,
+  "alt": "A pool of light on the floor. A figure shows only while crossing it.",
+  "op": "Partition",
+  "slug": "partition"
  },
  {
   "list": 5,
@@ -239,15 +394,30 @@
  },
  {
   "list": 5,
-  "text": "Space defined by temperature and humidity."
+  "text": "Space defined by temperature and humidity.",
+  "plate": "temp_space",
+  "still": 0,
+  "alt": "Contour lines drift across the plate.",
+  "op": "Partition",
+  "slug": "partition"
  },
  {
   "list": 5,
-  "text": "A structure that duplicates when supported by a mirror."
+  "text": "A structure that duplicates when supported by a mirror.",
+  "plate": "mirror_struct",
+  "still": -1,
+  "alt": "An arcade standing on a line, repeated upside down below it.",
+  "op": "Mirror",
+  "slug": "mirror"
  },
  {
   "list": 5,
-  "text": "Central vestibular spaces of great height."
+  "text": "Central vestibular spaces of great height.",
+  "plate": "vestibule",
+  "still": 0,
+  "alt": "A very tall shaft of light between walls, with a tiny figure at the bottom.",
+  "op": "Exaggerate",
+  "slug": "exaggerate"
  },
  {
   "list": 5,
@@ -260,11 +430,21 @@
  },
  {
   "list": 5,
-  "text": "A space made of the same material, illuminated with different colour temperatures."
+  "text": "A space made of the same material, illuminated with different colour temperatures.",
+  "op": "Isolate",
+  "slug": "isolate",
+  "plate": "niches",
+  "still": 0,
+  "alt": "Four identical niches, each filled with a different texture of light."
  },
  {
   "list": 6,
-  "text": "Natural continuation of a body, interrupted."
+  "text": "Natural continuation of a body, interrupted.",
+  "plate": "continuation",
+  "still": 0,
+  "alt": "A curve breaks off and carries on across a gap.",
+  "op": "Work The Gap",
+  "slug": "work-the-gap"
  },
  {
   "list": 6,
@@ -277,23 +457,44 @@
  },
  {
   "list": 6,
-  "text": "Monotonous music."
+  "text": "Monotonous music.",
+  "plate": "monotonous",
+  "still": 0,
+  "alt": "Eight equal bars, marked one by one.",
+  "op": "Run It Long",
+  "slug": "run-it-long"
  },
  {
   "list": 6,
-  "text": "The sound of cicadas."
+  "text": "The sound of cicadas.",
+  "plate": "cicadas",
+  "still": -1,
+  "alt": "Specks grow denser until they suddenly stop."
  },
  {
   "list": 6,
-  "text": "The sound of music contrasted with silence."
+  "text": "The sound of music contrasted with silence.",
+  "plate": "music_silence",
+  "still": 0,
+  "alt": "A busy sound wave drops to a flat line.",
+  "op": "Juxtapose",
+  "slug": "juxtapose"
  },
  {
   "list": 6,
-  "text": "Reading dense poetry as ambient sound."
+  "text": "Reading dense poetry as ambient sound.",
+  "plate": "poetry",
+  "still": 0,
+  "alt": "Lines of blocks that stand for words scroll slowly upwards.",
+  "op": "Reframe",
+  "slug": "reframe"
  },
  {
   "list": 6,
-  "text": "A complex clockwork mechanism that moves something that has no function."
+  "text": "A complex clockwork mechanism that moves something that has no function.",
+  "plate": "clockwork",
+  "still": 0,
+  "alt": "Three meshing gears drive a small pointer that does nothing."
  },
  {
   "list": 6,
@@ -304,19 +505,35 @@
  },
  {
   "list": 6,
-  "text": "Oil paintings of contrasting tones not well mixed."
+  "text": "Oil paintings of contrasting tones not well mixed.",
+  "plate": "oil_unmixed",
+  "still": 0,
+  "alt": "Black and white streaks swirled together but not blended."
  },
  {
   "list": 6,
-  "text": "White pencil on a slightly different white-toned sheet."
+  "text": "White pencil on a slightly different white-toned sheet.",
+  "plate": "white_pencil",
+  "still": 0,
+  "alt": "A faint hatched disc in white on an off-white sheet.",
+  "op": "Find The Threshold",
+  "slug": "find-the-threshold"
  },
  {
   "list": 6,
-  "text": "Rectangular boxes with stripes of different colours arranged in a regular grid."
+  "text": "Rectangular boxes with stripes of different colours arranged in a regular grid.",
+  "plate": "striped_boxes",
+  "still": 0,
+  "alt": "Nine boxes in a grid, each with different stripes.",
+  "op": "Align",
+  "slug": "align"
  },
  {
   "list": 7,
-  "text": "Fabrics laid underwater waving intensely."
+  "text": "Fabrics laid underwater waving intensely.",
+  "plate": "fabric_water",
+  "still": 0,
+  "alt": "Slow folds of cloth, with bubbles rising."
  },
  {
   "list": 7,
@@ -327,11 +544,19 @@
  },
  {
   "list": 7,
-  "text": "The smell of burning resins."
+  "text": "The smell of burning resins.",
+  "plate": "resin",
+  "still": 0,
+  "alt": "Two thin threads of smoke rise from a small dish."
  },
  {
   "list": 7,
-  "text": "Watching others without them knowing you're watching them"
+  "text": "Watching others without them knowing you're watching them",
+  "plate": "watching",
+  "still": 8,
+  "alt": "Figures walk past behind a small round peephole.",
+  "op": "Conceal",
+  "slug": "conceal"
  },
  {
   "list": 7,
@@ -362,11 +587,19 @@
  },
  {
   "list": 7,
-  "text": "The relationship between the space you’re in and the taste of something eaten there."
+  "text": "The relationship between the space you’re in and the taste of something eaten there.",
+  "plate": "taste_space",
+  "still": -1,
+  "alt": "Each bite taken from a round plate removes a piece of the room around it.",
+  "op": "Couple",
+  "slug": "couple"
  },
  {
   "list": 7,
-  "text": "The projection of shadows."
+  "text": "The projection of shadows.",
+  "plate": "shadows",
+  "still": 0,
+  "alt": "A block casts a shadow that swings around it."
  },
  {
   "list": 7,
@@ -377,7 +610,12 @@
  },
  {
   "list": 7,
-  "text": "An interior open space exposed to the weather"
+  "text": "An interior open space exposed to the weather",
+  "plate": "open_interior",
+  "still": 0,
+  "alt": "Rain falls through a gap in a roof into a room.",
+  "op": "Invert",
+  "slug": "invert"
  },
  {
   "list": 7,
@@ -395,15 +633,30 @@
  },
  {
   "list": 8,
-  "text": "A good seat to sit and contemplate."
+  "text": "A good seat to sit and contemplate.",
+  "plate": "seat",
+  "still": 5,
+  "alt": "A figure on a bench watches the sun go down.",
+  "op": "Attend",
+  "slug": "attend"
  },
  {
   "list": 8,
-  "text": "Juxtaposition of the same object but in different scales."
+  "text": "Juxtaposition of the same object but in different scales.",
+  "plate": "scales",
+  "still": 0,
+  "alt": "The same arch at three sizes.",
+  "op": "Resize",
+  "slug": "resize"
  },
  {
   "list": 8,
-  "text": "Furniture that encourages social interaction."
+  "text": "Furniture that encourages social interaction.",
+  "plate": "social",
+  "still": 17,
+  "alt": "Dots gather around a ring-shaped seat in plan.",
+  "op": "Steer",
+  "slug": "steer"
  },
  {
   "list": 8,
@@ -416,11 +669,19 @@
  },
  {
   "list": 8,
-  "text": "Helical spirals."
+  "text": "Helical spirals.",
+  "plate": "helix",
+  "still": 0,
+  "alt": "Two strands winding around each other."
  },
  {
   "list": 8,
-  "text": "An object placed on a very high plinth"
+  "text": "An object placed on a very high plinth",
+  "plate": "plinth",
+  "still": 0,
+  "alt": "A tiny ball on a tall column, with a small figure beside it.",
+  "op": "Relocate",
+  "slug": "relocate"
  },
  {
   "list": 8,
@@ -442,11 +703,17 @@
  },
  {
   "list": 8,
-  "text": "The frozen water of a waterfall."
+  "text": "The frozen water of a waterfall.",
+  "plate": "frozen",
+  "still": -1,
+  "alt": "Falling streaks slow down and stop."
  },
  {
   "list": 8,
-  "text": "An aluminium extrusion."
+  "text": "An aluminium extrusion.",
+  "plate": "extrusion",
+  "still": -1,
+  "alt": "A shaped profile drawn out into a long bar."
  },
  {
   "list": 9,
@@ -457,11 +724,21 @@
  },
  {
   "list": 9,
-  "text": "Different effects of time on the same material."
+  "text": "Different effects of time on the same material.",
+  "plate": "time_material",
+  "still": 0,
+  "alt": "Four identical blocks, each more worn away.",
+  "op": "Isolate",
+  "slug": "isolate"
  },
  {
   "list": 9,
-  "text": "Jungle vegetation framed by a window."
+  "text": "Jungle vegetation framed by a window.",
+  "plate": "jungle",
+  "still": 0,
+  "alt": "Leaves sway behind a window frame.",
+  "op": "Reframe",
+  "slug": "reframe"
  },
  {
   "list": 9,
@@ -483,23 +760,42 @@
  },
  {
   "list": 9,
-  "text": "Objects that only reveal their beauty if illuminated with a certain type of light."
+  "text": "Objects that only reveal their beauty if illuminated with a certain type of light.",
+  "plate": "reveal_light",
+  "still": 10,
+  "alt": "A band of light crosses the dark and shows a pattern only where it falls.",
+  "op": "Reveal",
+  "slug": "reveal"
  },
  {
   "list": 9,
-  "text": "Painted stone"
+  "text": "Painted stone",
+  "plate": "painted_stone",
+  "still": 0,
+  "alt": "A speckled stone with a painted band.",
+  "op": "Lay Over",
+  "slug": "lay-over"
  },
  {
   "list": 9,
-  "text": "Rocks coated with metal."
+  "text": "Rocks coated with metal.",
+  "plate": "metal_rock",
+  "still": 0,
+  "alt": "A faceted rock with a bright glint passing over it."
  },
  {
   "list": 9,
-  "text": "Gold leaf coating on irregular surfaces."
+  "text": "Gold leaf coating on irregular surfaces.",
+  "plate": "gold_leaf",
+  "still": 0,
+  "alt": "A lumpy surface that shimmers as the light moves."
  },
  {
   "list": 9,
-  "text": "Asymmetrical makeup"
+  "text": "Asymmetrical makeup",
+  "plate": "makeup",
+  "still": 0,
+  "alt": "A face with marks on one side only. It blinks."
  },
  {
   "list": 9,
@@ -510,6 +806,11 @@
  },
  {
   "list": 9,
-  "text": "The contrast of wood with bronze."
+  "text": "The contrast of wood with bronze.",
+  "plate": "wood_bronze",
+  "still": 0,
+  "alt": "Wood grain on the left, smooth shaded metal on the right.",
+  "op": "Juxtapose",
+  "slug": "juxtapose"
  }
 ]
