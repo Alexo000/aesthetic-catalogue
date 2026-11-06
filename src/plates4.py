@@ -347,7 +347,24 @@ def lips():
         f=poly(f,[(10,32),(21,32+gap),(43,32+gap),(54,32),(44,42),(32,45),(20,42)],1)
         x=22+18*k;f=ell(f,x,35+gap,x+6,38+gap,2);fr.append(f)
     return (fr,120,P)
-FOURTH=dict(depth=depth,heights=heights,overhead=overhead,underground=underground,doorway=doorway,gallery_angle=gallery_angle,scroll=scroll,candles=candles,mirror45=mirror45,prisms_view=prisms_view,rot_mirror=rot_mirror,ball_lens=ball_lens,painting_zoom=painting_zoom,heat=heat,film_mirror=film_mirror,letters=letters,pendulum=pendulum,timelapse=timelapse,drips=drips,fridge=fridge,odd_clock=odd_clock,force=force,watcher=watcher,torus=torus,no_ends=no_ends,rot_wall=rot_wall,neon_orange=neon_orange,fuchsia=fuchsia,blue_green=blue_green,red_faint=red_faint,yellow_black=yellow_black,red_green=red_green,golds=golds,lips=lips)
+def neon_words():
+    # GAS read backwards is SAG, and the word sags. Neon burns red-orange, argon blue.
+    L={'G':[(10,2),(2,2),(0,4),(0,14),(2,16),(10,16),(10,9),(6,9)],'A':[(0,16),(5,0),(10,16)],'A2':[(2,10),(8,10)],'S':[(10,2),(2,2),(0,4),(0,7),(2,9),(8,9),(10,11),(10,14),(8,16),(0,16)]}
+    def word(w,oy,sag,c):
+        f=blank();x0=7
+        for ch in w:
+            for k in ([ch,'A2'] if ch=='A' else [ch]):
+                P=L[k]
+                for (a,b),(d,e) in zip(P,P[1:]):
+                    for u in np.linspace(0,1,40):
+                        x=x0+(a+(d-a)*u)*1.3; y=oy+(b+(e-b)*u)+sag*np.sin(np.pi*x/63)
+                        fill(f,x,y,x+1,y+1,1)
+            x0+=18
+        d=ndi.distance_transform_edt(f==0);h=dith(np.exp(-d/2.6)*.5)
+        o=blank();o[h>0]=c+2;o[f>0]=c;return o
+    a=word('GAS',5,0,1);b=word('SAG',33,9,2);z=blank()
+    return ([a,z,a,z,b,z,b,z],[1100,70,120,260,1100,70,120,260],[0,0,0, 255,72,30, 96,126,255, 112,30,12, 34,44,110])
+FOURTH=dict(neon_words=neon_words,depth=depth,heights=heights,overhead=overhead,underground=underground,doorway=doorway,gallery_angle=gallery_angle,scroll=scroll,candles=candles,mirror45=mirror45,prisms_view=prisms_view,rot_mirror=rot_mirror,ball_lens=ball_lens,painting_zoom=painting_zoom,heat=heat,film_mirror=film_mirror,letters=letters,pendulum=pendulum,timelapse=timelapse,drips=drips,fridge=fridge,odd_clock=odd_clock,force=force,watcher=watcher,torus=torus,no_ends=no_ends,rot_wall=rot_wall,neon_orange=neon_orange,fuchsia=fuchsia,blue_green=blue_green,red_faint=red_faint,yellow_black=yellow_black,red_green=red_green,golds=golds,lips=lips)
 if __name__=='__main__':
     import sys,traceback
     bad=[]
