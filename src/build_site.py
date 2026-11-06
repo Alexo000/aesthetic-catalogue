@@ -23,10 +23,33 @@ def plate(x):
                 f'<img src="plates/{n}.gif" width="64" height="64" alt="{alt}" loading="lazy" decoding="async"></picture>')
     return f'<img src="plates/{n}.png" width="64" height="64" alt="{alt}" loading="lazy" decoding="async">'
 
+# The plates that carry colour. The shuffle keeps these apart, so the grid stays black and white first.
+COLOUR = {'blue', 'red_light', 'red_lasers', 'neon_words', 'red_dot', 'neon_orange', 'fuchsia', 'blue_green',
+          'red_faint', 'yellow_black', 'red_green', 'golds', 'lips', 'white_pencil'}
+assert COLOUR <= {x.get('plate') for x in entries}, COLOUR - {x.get('plate') for x in entries}
+
+# A new order on each visit. The page's own order stays in the HTML, for search and for anyone without script.
+# Coming back with the back button restores the same order, so nobody loses their place.
+SHUFFLE = '''<script>
+(function(){var u=document.querySelector('main ul'),k='ac-order',s=0;
+try{var n=performance.getEntriesByType('navigation')[0];if(n&&n.type==='back_forward')s=+sessionStorage.getItem(k)||0}catch(e){}
+s=s||Math.floor(Math.random()*4294967295)+1;
+try{sessionStorage.setItem(k,s)}catch(e){}
+function r(){s=s+1831565813|0;var t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}
+function m(x){for(var i=x.length-1;i>0;i--){var j=Math.floor(r()*(i+1)),t=x[i];x[i]=x[j];x[j]=t}return x}
+var a=[].slice.call(u.children),c=m(a.filter(function(l){return l.dataset.c})),b=m(a.filter(function(l){return !l.dataset.c}));
+/* The blank entry never opens the page. */
+for(var i=0;i<6;i++)if(b[i].querySelector('.void')){var t=b[i];b[i]=b[i+20];b[i+20]=t}
+/* Colour gets one place in each even stretch of the grid, so two never sit together. */
+var g=a.length/c.length,p={};c.forEach(function(l,i){p[Math.floor(g*(i+.15+.7*r()))]=l});
+var f=document.createDocumentFragment();for(i=0;i<a.length;i++)f.appendChild(p[i]||b.shift());u.appendChild(f)})();
+</script>'''
+
 def item(x):
     op = f'<a href="https://operations.ramos-saavedra.com/{x["slug"]}/">{e(x["op"])}</a>' if x.get('op') else ''
     pic = plate(x) if 'plate' in x else '<div class="void" role="img" aria-label="Nothing. An empty space the size of a picture."></div>'
-    return f'<li>{pic}<div class="cap"><p>{txt(x["text"])}</p>{op}</div></li>'
+    c = ' data-c="1"' if x.get('plate') in COLOUR else ''
+    return f'<li{c}>{pic}<div class="cap"><p>{txt(x["text"])}</p>{op}</div></li>'
 
 body = '<ul>' + '\n'.join(item(x) for x in entries) + '</ul>'
 
@@ -91,6 +114,7 @@ footer p {{ margin:0; max-width:52ch; }}
 <main>
 {body}
 </main>
+{SHUFFLE}
 <footer>
 <p>The small names under the pictures are moves from <a href="https://operations.ramos-saavedra.com">Actionary</a>.</p>
 <p>© 2026 <a href="https://www.ramos-saavedra.com/">Alejandro Ramos Saavedra</a> · <a href="https://www.ramos-saavedra.com/privacy">Privacy</a></p>

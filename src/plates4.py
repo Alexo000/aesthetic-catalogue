@@ -364,7 +364,7 @@ def neon_words():
         o=blank();o[h>0]=c+2;o[f>0]=c;return o
     a=word('GAS',5,0,1);b=word('SAG',33,9,2);z=blank()
     return ([a,z,a,z,b,z,b,z],[1100,70,120,260,1100,70,120,260],[0,0,0, 255,72,30, 96,126,255, 112,30,12, 34,44,110])
-FOURTH=dict(neon_words=neon_words,depth=depth,heights=heights,overhead=overhead,underground=underground,doorway=doorway,gallery_angle=gallery_angle,scroll=scroll,candles=candles,mirror45=mirror45,prisms_view=prisms_view,rot_mirror=rot_mirror,ball_lens=ball_lens,painting_zoom=painting_zoom,heat=heat,film_mirror=film_mirror,letters=letters,pendulum=pendulum,timelapse=timelapse,drips=drips,fridge=fridge,odd_clock=odd_clock,force=force,watcher=watcher,torus=torus,no_ends=no_ends,rot_wall=rot_wall,neon_orange=neon_orange,fuchsia=fuchsia,blue_green=blue_green,red_faint=red_faint,yellow_black=yellow_black,red_green=red_green,golds=golds,lips=lips)
+FOURTH=dict(depth=depth,heights=heights,overhead=overhead,underground=underground,doorway=doorway,gallery_angle=gallery_angle,scroll=scroll,candles=candles,mirror45=mirror45,prisms_view=prisms_view,rot_mirror=rot_mirror,ball_lens=ball_lens,painting_zoom=painting_zoom,heat=heat,film_mirror=film_mirror,letters=letters,pendulum=pendulum,timelapse=timelapse,drips=drips,fridge=fridge,odd_clock=odd_clock,force=force,watcher=watcher,torus=torus,no_ends=no_ends,rot_wall=rot_wall,red_faint=red_faint)
 if __name__=='__main__':
     import sys,traceback
     bad=[]
