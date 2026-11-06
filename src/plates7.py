@@ -247,8 +247,8 @@ def plant():
     fr=[]
     for t in range(28):
         f=blank(); fill(f,0,50,63,50)
-        fill(f,8,47,10,49);
-        x=56-t*1.6
+        fill(f,20,47,22,49)
+        x=56-t*.9
         fill(f,x,38,x+1,49); fill(f,x,35,x+1,36)
         if t>=23:
             r=(t-22)*3; f=ell(f,21-r,48-r,21+r,48+r,1)
